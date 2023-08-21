@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #222831;
+  background: #EEEEEE;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@layer components {
+  .bg-primary {
+    @apply bg-[#222831]
+  }
+
+  .bg-secondary {
+      @apply bg-[#393E46]
+  }
+
+  .bg-tertiary {
+      @apply bg-[#EEEEEE]
+  }
+
+  .text-primary {
+    @apply text-[#222831]
+  }
+
+  .text-secondary {
+      @apply text-[#393E46]
+  }
+
+  .text-tertiary {
+      @apply text-[#EEEEEE]
+  }
+}

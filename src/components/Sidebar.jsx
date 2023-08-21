@@ -8,7 +8,7 @@ function Sidebar() {
       <Link
         href="https://github.com/ariefro"
         target="_blank"
-        className="flex flex-col items-center space-y-4 pt-7 pb-3 rounded-l-lg bg-secondary"
+        className="flex flex-col items-center space-y-4 pt-7 pb-3 rounded-l-lg bg-secondary hover:bg-primary"
       >
         <p className="-rotate-90">Github</p>
         <Icon.Github className="-rotate-90" />
@@ -16,7 +16,7 @@ function Sidebar() {
       <Link
         href="https://www.linkedin.com/in/ariefromadhon/"
         target="_blank"
-        className="px-[0.85rem] py-2 rounded-l-lg bg-secondary"
+        className="px-3 py-2 rounded-l-lg bg-secondary hover:bg-primary"
       >
         <Icon.Linkedin />
       </Link>

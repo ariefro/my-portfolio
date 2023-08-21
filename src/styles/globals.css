@@ -5,8 +5,6 @@
 body {
   color: #222831;
   background: #EEEEEE;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 @layer components {

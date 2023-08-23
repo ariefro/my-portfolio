@@ -1,3 +1,5 @@
+import { Sidebar } from "@/components";
+
 export default function Home() {
   return (
     <main>
@@ -18,6 +20,7 @@ export default function Home() {
         <p>BLITAR, INDONESIA</p>
         <p>ariefromadhon26@gmail.com</p>
       </div>
+      <Sidebar />
     </main>
   );
 }

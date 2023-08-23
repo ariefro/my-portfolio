@@ -31,4 +31,8 @@ body {
   .text-tertiary {
       @apply text-[#EEEEEE]
   }
+
+  .about-content {
+    @apply h-full flex items-center justify-center transform transition-opacity duration-500
+  }
 }

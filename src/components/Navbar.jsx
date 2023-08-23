@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Icon } from ".";
 
@@ -13,11 +13,11 @@ function Navbar() {
 
   return (
     <header>
-      <nav className="flex justify-between items-center h-24">
+      <nav className="flex justify-between items-center h-28 md:h-24">
         <p className="text-lg font-semibold">PORTOFOLIO 2023</p>
         <div className="hidden font-semibold text-md md:flex space-x-20">
           <Link href="/">home</Link>
-          <Link href="/">about</Link>
+          <Link href="/about">about</Link>
           <Link href="/">work</Link>
           <Link href="/">contact</Link>
         </div>
@@ -31,10 +31,18 @@ function Navbar() {
               <Icon.Close />
             </button>
             <div className="flex flex-col font-semibold text-6xl space-y-6 mt-32 ml-4">
-              <Link href="/">home</Link>
-              <Link href="/">about</Link>
-              <Link href="/">work</Link>
-              <Link href="/">contact</Link>
+              <Link href="/" onClick={() => toogleNavItems(isNavExpand)}>
+                home
+              </Link>
+              <Link href="/about" onClick={() => toogleNavItems(isNavExpand)}>
+                about
+              </Link>
+              <Link href="/" onClick={() => toogleNavItems(isNavExpand)}>
+                work
+              </Link>
+              <Link href="/" onClick={() => toogleNavItems(isNavExpand)}>
+                contact
+              </Link>
             </div>
             <p className="absolute text-md bottom-5 ml-4">
               ariefromadhon26@gmail.com
@@ -49,7 +57,7 @@ function Navbar() {
           </button>
         )}
       </nav>
-      <div className="h-[0.15rem] w-full bg-black"></div>
+      <div className="h-[0.2rem] w-full bg-black"></div>
     </header>
   );
 }

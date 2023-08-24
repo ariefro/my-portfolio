@@ -20,7 +20,7 @@ function Navbar({ className, bgLineColor }) {
         <div className="hidden font-semibold text-md md:flex space-x-20">
           <Link href="/">home</Link>
           <Link href="/about">about</Link>
-          <Link href="/work">work</Link>
+          <Link href="/projects">projects</Link>
           <Link href="/">contact</Link>
         </div>
 
@@ -39,8 +39,11 @@ function Navbar({ className, bgLineColor }) {
               <Link href="/about" onClick={() => toogleNavItems(isNavExpand)}>
                 about
               </Link>
-              <Link href="/work" onClick={() => toogleNavItems(isNavExpand)}>
-                work
+              <Link
+                href="/projects"
+                onClick={() => toogleNavItems(isNavExpand)}
+              >
+                projects
               </Link>
               <Link href="/" onClick={() => toogleNavItems(isNavExpand)}>
                 contact

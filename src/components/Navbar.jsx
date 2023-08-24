@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Icon } from ".";
 
-function Navbar() {
+function Navbar({ className, bgLineColor }) {
   const [isNavExpand, setIsNavExpand] = useState(false);
 
   const toogleNavItems = (prevState) => {
@@ -13,12 +13,14 @@ function Navbar() {
 
   return (
     <header>
-      <nav className="flex justify-between items-center h-28 md:h-24">
+      <nav
+        className={`${className} flex justify-between items-center h-28 md:h-24`}
+      >
         <p className="text-lg font-semibold">PORTOFOLIO 2023</p>
         <div className="hidden font-semibold text-md md:flex space-x-20">
           <Link href="/">home</Link>
           <Link href="/about">about</Link>
-          <Link href="/">work</Link>
+          <Link href="/projects">projects</Link>
           <Link href="/">contact</Link>
         </div>
 
@@ -37,8 +39,11 @@ function Navbar() {
               <Link href="/about" onClick={() => toogleNavItems(isNavExpand)}>
                 about
               </Link>
-              <Link href="/" onClick={() => toogleNavItems(isNavExpand)}>
-                work
+              <Link
+                href="/projects"
+                onClick={() => toogleNavItems(isNavExpand)}
+              >
+                projects
               </Link>
               <Link href="/" onClick={() => toogleNavItems(isNavExpand)}>
                 contact
@@ -57,7 +62,7 @@ function Navbar() {
           </button>
         )}
       </nav>
-      <div className="h-[0.2rem] w-full bg-black"></div>
+      <div className={`h-[0.2rem] w-full ${bgLineColor}`}></div>
     </header>
   );
 }

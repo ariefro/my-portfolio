@@ -12,10 +12,13 @@ export const metadata = {
 
 export default function AboutLayout({ children }) {
   return (
-    <div className="max-w-7xl mx-auto px-4">
+    <div className="max-w-7xl mx-auto px-4 text">
       <Navbar className="text-primary" bgLineColor="bg-secondary" />
       {children}
-      <Footer />
+      <Footer
+        className="bg-primary text-tertiary"
+        buttonClassName="bg-tertiary text-primary"
+      />
     </div>
   );
 }

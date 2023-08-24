@@ -15,7 +15,10 @@ export default function ProjectsLayout({ children }) {
     <div className="max-w-7xl mx-auto px-4 bg-primary">
       <Navbar className="text-tertiary" bgLineColor="bg-tertiary" />
       {children}
-      <Footer />
+      <Footer
+        className="bg-tertiary text-primary"
+        buttonClassName="bg-primary text-tertiary"
+      />
     </div>
   );
 }

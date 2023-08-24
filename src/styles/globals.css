@@ -32,6 +32,10 @@ body {
       @apply text-[#EEEEEE]
   }
 
+  .text-quaternary {
+    @apply text-[#00ADB5]
+  }
+
   .about-content {
     @apply h-full flex items-center justify-center transform transition-opacity duration-500
   }

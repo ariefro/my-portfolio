@@ -12,7 +12,7 @@ function Navbar({ className, bgLineColor }) {
   };
 
   return (
-    <header>
+    <header className="max-w-7xl mx-auto px-4">
       <nav
         className={`${className} flex justify-between items-center h-28 md:h-24`}
       >

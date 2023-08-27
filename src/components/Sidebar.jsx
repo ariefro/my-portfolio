@@ -16,7 +16,7 @@ function Sidebar() {
       <Link
         href="https://www.linkedin.com/in/ariefromadhon/"
         target="_blank"
-        className="px-3 py-2 rounded-l-lg bg-secondary hover:bg-primary"
+        className="px-[0.85rem] py-2 rounded-l-lg bg-secondary hover:bg-primary"
       >
         <Icon.Linkedin />
       </Link>

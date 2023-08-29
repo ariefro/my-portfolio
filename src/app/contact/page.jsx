@@ -1,12 +1,42 @@
 "use client";
 
 import { Input, Label } from "@/components";
+import axios from "axios";
 import React, { useState } from "react";
+import { toast } from "react-hot-toast";
 
 function ContactPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  const handleSubmit = async (e) => {
+    const toastLoading = toast.loading("Loading");
+    e.preventDefault();
+
+    try {
+      await axios.post("/api/email", {
+        name,
+        email,
+        message,
+      });
+
+      setName("");
+      setEmail("");
+      setMessage("");
+
+      toast.success(
+        (t) => <div>Thankyou! Your message has been delivered.</div>,
+        {
+          id: toastLoading,
+        }
+      );
+    } catch (error) {
+      toast.error(<div className="first-letter:uppercase">{error}</div>, {
+        id: toastLoading,
+      });
+    }
+  };
 
   return (
     <section className="max-w-7xl mx-auto">
@@ -15,7 +45,7 @@ function ContactPage() {
         <br />
         Ready to get started?
       </h1>
-      <form action="#" method="POST" className="pb-24">
+      <form method="POST" className="pb-24">
         <div className="relative z-0 w-full mb-8 group md:w-1/2">
           <Input
             id="name"
@@ -52,9 +82,9 @@ function ContactPage() {
           </label>
         </div>
         <button
-          type="submit"
+          onClick={handleSubmit}
           disabled={!name || !email || !message}
-          className="bg-tertiary hover:bg-gray-200 text-primary font-medium text-sm px-4 py-2 disabled:hover:text-pink-400"
+          className="bg-tertiary hover:bg-gray-200 text-primary font-medium text-sm px-4 py-2 disabled:hover:cursor-not-allowed disabled:hover:bg-tertiary"
         >
           Submit
         </button>

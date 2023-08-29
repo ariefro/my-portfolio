@@ -12,7 +12,7 @@ function Navbar({ className, bgLineColor }) {
   };
 
   return (
-    <header className="max-w-7xl mx-auto px-4">
+    <header className="max-w-7xl mx-auto">
       <nav
         className={`${className} flex justify-between items-center h-28 md:h-24`}
       >
@@ -21,7 +21,7 @@ function Navbar({ className, bgLineColor }) {
           <Link href="/">home</Link>
           <Link href="/about">about</Link>
           <Link href="/projects">projects</Link>
-          <Link href="/">contact</Link>
+          <Link href="/contact">contact</Link>
         </div>
 
         {isNavExpand ? (
@@ -45,7 +45,7 @@ function Navbar({ className, bgLineColor }) {
               >
                 projects
               </Link>
-              <Link href="/" onClick={() => toogleNavItems(isNavExpand)}>
+              <Link href="/contact" onClick={() => toogleNavItems(isNavExpand)}>
                 contact
               </Link>
             </div>
@@ -56,7 +56,7 @@ function Navbar({ className, bgLineColor }) {
         ) : (
           <button
             onClick={() => toogleNavItems(isNavExpand)}
-            className="text-primary md:hidden"
+            className={`${className} md:hidden`}
           >
             <Icon.Hamburger />
           </button>

@@ -3,7 +3,7 @@ import React from "react";
 
 function ProjectsPage() {
   return (
-    <section className="max-w-7xl px-4 mx-auto bg-pink-300">
+    <section className="max-w-7xl mx-auto">
       <div className="flex flex-col space-y-10 py-24 pr-5 text-tertiary md:w-1/2">
         <ProjectDescription
           href="#"

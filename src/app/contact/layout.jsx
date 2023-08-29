@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function ContactLayout({ children }) {
   return (
-    <div className="bg-primary h-screen mx-auto px-4 text">
+    <div className="bg-primary mx-auto px-4 min-h-screen">
       <Navbar className="text-tertiary" bgLineColor="bg-tertiary" />
       {children}
     </div>

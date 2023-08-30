@@ -70,7 +70,7 @@ function ContactPage() {
             rows="4"
             onChange={(e) => setMessage(e.target.value)}
             value={message}
-            className="block py-2.5 px-0 w-full text-sm text-quaternary bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-600 peer"
+            className="block py-2.5 px-0 w-full text-sm text-tertiary bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-gray-600 peer"
             placeholder=" "
             required
           />

@@ -4,10 +4,10 @@ import React from "react";
 function ProjectsPage() {
   return (
     <section className="max-w-7xl mx-auto">
-      <div className="flex flex-col space-y-10 py-24 pr-5 text-tertiary lg:w-2/3">
+      <ul className="flex flex-col space-y-10 py-24 pr-5 text-tertiary lg:w-2/3">
         <ProjectDescription
           title="Wallet"
-          href="#"
+          href="https://lakoste.vercel.app/"
           src="https://i.ibb.co/VgqbD1s/Cover-preview.png"
           description="Financial planning app that is Initiative project for mentoring
           program"
@@ -27,7 +27,7 @@ function ProjectsPage() {
           src="https://i.ibb.co/h9ZdPrS/Screenshot-2023-08-30-at-11-06-29.png"
           description="AI Chatbot with OpenAI API"
         />
-      </div>
+      </ul>
     </section>
   );
 }

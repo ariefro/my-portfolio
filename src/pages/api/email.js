@@ -7,7 +7,7 @@ const handler = async (req, res) => {
       case "POST": {
         await sendMail(body.name, body.email, body.message);
 
-        res.status(200).send("Success");
+        res.status(200).send("Success to send message");
         break;
       }
 

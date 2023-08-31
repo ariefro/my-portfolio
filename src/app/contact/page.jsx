@@ -45,8 +45,8 @@ function ContactPage() {
         <br />
         Ready to get started?
       </h1>
-      <form method="POST" className="pb-24">
-        <div className="relative z-0 w-full mb-8 group md:w-1/2">
+      <form method="POST" className="pb-24 relative md:w-1/2">
+        <div className="relative z-0 w-full mb-8 group">
           <Input
             id="name"
             type="text"
@@ -55,7 +55,7 @@ function ContactPage() {
           />
           <Label id="name">Name</Label>
         </div>
-        <div className="relative z-0 w-full mb-8 group md:w-1/2">
+        <div className="relative z-0 w-full mb-8 group">
           <Input
             id="email"
             type="email"
@@ -64,7 +64,7 @@ function ContactPage() {
           />
           <Label id="email">Email</Label>
         </div>
-        <div className="relative z-0 w-full mb-8 group md:w-1/2">
+        <div className="relative z-0 w-full mb-8 group">
           <textarea
             id="message"
             rows="4"
@@ -84,7 +84,7 @@ function ContactPage() {
         <button
           onClick={handleSubmit}
           disabled={!name || !email || !message}
-          className="bg-tertiary hover:bg-gray-200 text-primary font-medium text-sm px-4 py-2 disabled:hover:cursor-not-allowed disabled:hover:bg-tertiary"
+          className="absolute bottom-10 right-0 bg-tertiary hover:bg-gray-200 text-primary font-medium text-sm px-4 py-2 disabled:hover:cursor-not-allowed disabled:hover:bg-tertiary"
         >
           Submit
         </button>

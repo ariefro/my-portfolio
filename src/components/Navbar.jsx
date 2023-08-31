@@ -28,7 +28,7 @@ function Navbar({ className, bgLineColor }) {
           <div className="absolute z-50 inset-0 bg-primary text-tertiary">
             <button
               onClick={() => toogleNavItems(isNavExpand)}
-              className="absolute top-7 right-4"
+              className="absolute top-9 right-4"
             >
               <Icon.Close />
             </button>

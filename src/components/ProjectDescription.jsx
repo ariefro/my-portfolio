@@ -3,9 +3,9 @@ import React from "react";
 import { Icon } from ".";
 import Image from "next/image";
 
-function ProjectDescription({ href, title, description, src }) {
+function ProjectDescription({ href, title, description, src, children }) {
   return (
-    <li className="flex space-x-5 p-7 hover:bg-secondary rounded-lg">
+    <li className="flex flex-col-reverse p-7 hover:bg-secondary rounded-lg md:flex-row md:space-x-5">
       <Image
         alt="thumbnail"
         src={src}
@@ -25,6 +25,7 @@ function ProjectDescription({ href, title, description, src }) {
           <Icon.Arrow className="rotate-[45deg] translate-y-2.5 transition-transform group-hover:-translate-y-0 group-hover:translate-x-3 group-hover:text-quaternary" />
         </Link>
         <p className="leading-5 mt-3">{description}</p>
+        <ul className="flex flex-wrap gap-3 mt-5">{children}</ul>
       </div>
     </li>
   );

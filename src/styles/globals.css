@@ -20,6 +20,10 @@ body {
       @apply bg-[#EEEEEE]
   }
 
+  .bg-quaternary {
+    @apply bg-[#00ADB5]
+  }
+
   .text-primary {
     @apply text-[#222831]
   }

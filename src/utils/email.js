@@ -8,6 +8,20 @@ export async function sendMail(name, from, message) {
       user: process.env.NODEMAILER_EMAIL,
       pass: process.env.NODEMAILER_PASSWORD,
     },
+    secure: true,
+  });
+
+  await new Promise((resolve, reject) => {
+    // verify connection configuration
+    transporter.verify(function (error, success) {
+      if (error) {
+        console.log(error);
+        reject(error);
+      } else {
+        console.log("Server is ready to take our messages");
+        resolve(success);
+      }
+    });
   });
 
   const mailData = {
@@ -18,11 +32,14 @@ export async function sendMail(name, from, message) {
     ${from}</p>`,
   };
 
-  transporter.sendMail(mailData, function (error, info) {
-    if (error) {
-      throw new Error(error);
-    } else {
-      return true;
-    }
+  await new Promise((resolve, reject) => {
+    // send mail
+    transporter.sendMail(mailData, (err, info) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(info);
+      }
+    });
   });
 }

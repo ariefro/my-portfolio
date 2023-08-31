@@ -11,6 +11,7 @@ export default function ProjectsLayout({ children }) {
   return (
     <div className="bg-primary px-4">
       <Navbar className="text-tertiary" bgLineColor="bg-tertiary" />
+      <Sidebar />
       {children}
       <Footer
         className="bg-tertiary text-primary"

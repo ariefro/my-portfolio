@@ -9,7 +9,7 @@ function Footer({ className, buttonClassName }) {
       <p className="text-5xl text-center leading-10 mb-14 lg:text-8xl lg:text-left lg:mb-0 lg:tracking-wide lg:leading-[5rem] lg:w-[38rem]">
         Let's create something awesome together
       </p>
-      <Link href="/">
+      <Link href="/contact">
         <button
           className={`${buttonClassName} h-56 w-56 mx-auto rounded-full text-xl transition-all ease-in-out duration-300 hover:text-quaternary lg:text-2xl lg:h-64 lg:w-64 lg:mx-10`}
         >

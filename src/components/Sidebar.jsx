@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function Sidebar() {
   return (
-    <div className="absolute flex flex-col items-center space-y-1 right-0 top-1/3 text-tertiary md:top-1/2">
+    <div className="fixed z-50 flex flex-col items-center space-y-1 right-0 top-1/3 text-tertiary md:top-1/2">
       <Link
         href="https://github.com/ariefro"
         target="_blank"

@@ -1,10 +1,21 @@
-import { ProjectDescription, Tag } from "@/components";
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
+import { ProjectDescription, Tag } from "@/components";
 
 function ProjectsPage() {
   return (
     <section className="max-w-7xl mx-auto">
-      <ul className="flex flex-col space-y-7 py-24 pr-5 text-tertiary lg:w-2/3">
+      <motion.h3
+        className="text-2xl font-semibold text-tertiary mt-20 md:text-3xl lg:text-4xl"
+        transition={{ duration: 2, ease: "easeInOut" }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+      >
+        Some Things I’ve Built
+      </motion.h3>
+      <ul className="flex flex-col space-y-7 pt-16 pb-24 pr-5 text-tertiary lg:w-2/3">
         <ProjectDescription
           title="Wallet"
           href="https://lakoste.vercel.app/"

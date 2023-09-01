@@ -24,8 +24,6 @@ export async function sendMail(name, from, message) {
     });
   });
 
-  console.log("====>", process.env.NODEMAILER_EMAIL);
-
   const mailData = {
     from: from,
     to: process.env.NODEMAILER_EMAIL_RECEIVER,

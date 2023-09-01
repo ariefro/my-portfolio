@@ -2,10 +2,16 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { Icon } from ".";
 
 function Navbar({ className, bgLineColor }) {
   const [isNavExpand, setIsNavExpand] = useState(false);
+
+  const config = {
+    duration: 2,
+    // ease: "easeInOut",
+  };
 
   const toogleNavItems = (prevState) => {
     setIsNavExpand(!prevState);
@@ -13,8 +19,11 @@ function Navbar({ className, bgLineColor }) {
 
   return (
     <header className="max-w-7xl mx-auto">
-      <nav
+      <motion.nav
         className={`${className} flex justify-between items-center h-28 md:h-24`}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2, delay: 2.1 }}
       >
         <p className="text-lg font-semibold">PORTOFOLIO 2023</p>
         <div className="hidden font-semibold text-md md:flex space-x-20">
@@ -61,8 +70,17 @@ function Navbar({ className, bgLineColor }) {
             <Icon.Hamburger />
           </button>
         )}
-      </nav>
-      <div className={`h-[0.2rem] w-full ${bgLineColor}`}></div>
+      </motion.nav>
+      <motion.div
+        className={`h-[0.2rem] w-full ${bgLineColor}`}
+        transition={{
+          duration: 1.4,
+          delay: 2,
+        }}
+        initial={{ opacity: 0, y: -70 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -70 }}
+      ></motion.div>
     </header>
   );
 }

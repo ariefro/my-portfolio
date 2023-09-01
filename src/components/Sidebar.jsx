@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { motion } from "framer-motion";
 import { Icon } from ".";
@@ -14,7 +16,6 @@ function Sidebar() {
       }}
       initial={{ opacity: 0, x: 30 }}
       animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: 30 }}
     >
       <Link
         href="https://github.com/ariefro"

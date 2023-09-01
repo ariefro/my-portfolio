@@ -13,13 +13,13 @@ export default function Home() {
     <div className="max-w-7xl mx-auto px-4">
       <Navbar className="text-primary" bgLineColor="bg-secondary" />
       <main>
-        <div className="text-primary mt-16 space-y-5">
+        <div className="text-primary relative mt-16 space-y-5">
           <motion.p
             className="font-bold text-5xl leading-tight sm:text-7xl md:text-9xl"
             transition={config}
-            initial={{ opacity: 0, x: -190 }}
+            initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -190 }}
+            exit={{ opacity: 0, x: -100 }}
           >
             Arief
             <br />

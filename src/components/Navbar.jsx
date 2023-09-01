@@ -23,7 +23,7 @@ function Navbar({ className, bgLineColor }) {
         className={`${className} flex justify-between items-center h-28 md:h-24`}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 2, delay: 2.1 }}
+        transition={{ duration: 2, delay: 0.2 }}
       >
         <p className="text-lg font-semibold">PORTOFOLIO 2023</p>
         <div className="hidden font-semibold text-md md:flex space-x-20">
@@ -74,12 +74,10 @@ function Navbar({ className, bgLineColor }) {
       <motion.div
         className={`h-[0.2rem] w-full ${bgLineColor}`}
         transition={{
-          duration: 1.4,
-          delay: 2,
+          duration: 1,
         }}
-        initial={{ opacity: 0, y: -70 }}
+        initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -70 }}
       ></motion.div>
     </header>
   );

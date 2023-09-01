@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 function AboutPage() {
   const [isVisible, setIsVisble] = useState("content-one");
@@ -34,11 +35,23 @@ function AboutPage() {
 
   return (
     <div className="text-primary mx-auto text-xl text-center font-bold sm:text-2xl md:text-3xl md:w-1/2 lg:text-4xl lg:w-3/4">
-      <p className="mb-16 text-center uppercase font-light p-6 tracking-widest text-lg md:p-10">
+      <motion.p
+        className="mb-16 text-center uppercase font-light p-6 tracking-widest text-sm md:p-10"
+        viewport={{ once: true }}
+        whileInView={{ opacity: 1, transition: { delay: 3 } }}
+        initial={{ opacity: 0 }}
+        exit={{ opacity: 0, transition: { delay: 1 } }}
+      >
         scroll down
-      </p>
+      </motion.p>
 
-      <section className="h-[50vh]">
+      <section className="h-[50vh] relative">
+        <motion.div
+          className="absolute z-50 w-full top-1/3 h-80 bg-[#EEEEEE]"
+          transition={{ duration: 2, ease: "easeInOut" }}
+          initial={{ opacity: 1 }}
+          animate={{ opacity: 0 }}
+        ></motion.div>
         <p
           id="content-one"
           className={`about-content ${

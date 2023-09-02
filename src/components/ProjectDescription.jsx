@@ -1,11 +1,26 @@
-import Link from "next/link";
-import React from "react";
-import { Icon } from ".";
-import Image from "next/image";
+"use client";
 
-function ProjectDescription({ href, title, description, src, children }) {
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { Icon } from ".";
+
+function ProjectDescription({
+  href,
+  title,
+  description,
+  src,
+  delay,
+  children,
+}) {
   return (
-    <li className="flex flex-col-reverse p-7 hover:bg-secondary rounded-lg md:flex-row md:space-x-5">
+    <motion.li
+      className="flex flex-col-reverse p-7 hover:bg-secondary rounded-lg md:flex-row md:space-x-5"
+      transition={{ duration: 2, delay: delay, ease: "easeInOut" }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       <Image
         alt="thumbnail"
         src={src}
@@ -27,7 +42,7 @@ function ProjectDescription({ href, title, description, src, children }) {
         <p className="leading-5 mt-3">{description}</p>
         <ul className="flex flex-wrap gap-3 mt-5">{children}</ul>
       </div>
-    </li>
+    </motion.li>
   );
 }
 

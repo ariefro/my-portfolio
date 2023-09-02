@@ -1,10 +1,22 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 import { Icon } from ".";
 import Link from "next/link";
 
 function Sidebar() {
   return (
-    <div className="fixed z-40 flex flex-col items-center space-y-1 right-0 top-1/3 text-tertiary md:top-1/2">
+    <motion.div
+      className="fixed z-40 flex flex-col items-center space-y-1 right-0 top-1/3 text-tertiary md:top-1/2"
+      transition={{
+        duration: 1,
+        delay: 1.5,
+        type: "spring",
+      }}
+      initial={{ opacity: 0, x: 30 }}
+      animate={{ opacity: 1, x: 0 }}
+    >
       <Link
         href="https://github.com/ariefro"
         target="_blank"
@@ -27,7 +39,7 @@ function Sidebar() {
       >
         CV
       </Link>
-    </div>
+    </motion.div>
   );
 }
 

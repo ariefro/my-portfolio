@@ -28,14 +28,14 @@ function Sidebar() {
       <Link
         href="https://www.linkedin.com/in/ariefromadhon/"
         target="_blank"
-        className="px-[0.85rem] py-2 rounded-l-lg bg-secondary"
+        className="px-3 py-2 rounded-l-lg bg-secondary"
       >
         <Icon.Linkedin />
       </Link>
       <Link
         href="https://drive.google.com/file/d/1Ux4bfiJ8j4bDbr0YOd9H3QxQreY84XvQ/view?usp=sharing"
         target="_blank"
-        className="px-[0.9rem] py-2 rounded-l-lg bg-secondary"
+        className="px-[0.82rem] py-2 rounded-l-lg bg-secondary"
       >
         CV
       </Link>

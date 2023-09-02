@@ -11,7 +11,7 @@ function Sidebar() {
       className="fixed z-40 flex flex-col items-center space-y-1 right-0 top-1/3 text-tertiary md:top-1/2"
       transition={{
         duration: 1,
-        delay: 1,
+        delay: 1.5,
         type: "spring",
       }}
       initial={{ opacity: 0, x: 30 }}

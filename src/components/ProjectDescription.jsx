@@ -6,11 +6,18 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Icon } from ".";
 
-function ProjectDescription({ href, title, description, src, children }) {
+function ProjectDescription({
+  href,
+  title,
+  description,
+  src,
+  delay,
+  children,
+}) {
   return (
     <motion.li
       className="flex flex-col-reverse p-7 hover:bg-secondary rounded-lg md:flex-row md:space-x-5"
-      transition={{ duration: 2, delay: 1, ease: "easeInOut" }}
+      transition={{ duration: 2, delay: delay, ease: "easeInOut" }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >

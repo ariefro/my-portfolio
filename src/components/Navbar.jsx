@@ -13,14 +13,14 @@ function Navbar({ className, bgLineColor }) {
   };
 
   return (
-    <header className="max-w-7xl mx-auto">
+    <header className="max-w-7xl mx-auto text-lg">
       <motion.nav
         className={`${className} flex justify-between items-center h-28 md:h-24`}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2, delay: 0.2 }}
       >
-        <p className="text-lg font-semibold">PORTOFOLIO 2023</p>
+        <p className="font-semibold">PORTOFOLIO 2023</p>
         <div className="hidden font-semibold text-md md:flex space-x-20">
           <Link href="/">home</Link>
           <Link href="/about">about</Link>
@@ -30,7 +30,7 @@ function Navbar({ className, bgLineColor }) {
 
         {isNavExpand ? (
           <motion.div
-            className="absolute z-50 inset-0 bg-primary text-tertiary"
+            className="fixed z-50 inset-0 bg-primary text-tertiary"
             initial={{ opacity: 1, y: "-100vh" }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}

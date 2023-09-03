@@ -38,7 +38,7 @@ function AboutPage() {
       <div className="text-primary mx-auto text-xl text-center font-bold sm:text-2xl md:text-3xl md:w-1/2 lg:text-4xl lg:w-3/4">
         <section className="h-[50vh] relative mt-[17vh]">
           <motion.div
-            className="absolute z-50 w-full top-1/3 h-80 bg-[#EEEEEE]"
+            className="absolute z-40 w-full top-1/3 h-80 bg-[#EEEEEE]"
             transition={{ duration: 2, ease: "easeInOut" }}
             initial={{ opacity: 1 }}
             animate={{ opacity: 0 }}

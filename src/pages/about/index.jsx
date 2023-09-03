@@ -35,7 +35,7 @@ function AboutPage() {
   return (
     <PageWrapper className="bg-tertiary">
       <Navbar className="text-primary" bgLineColor="bg-secondary" />
-      <div className="text-primary mx-auto text-xl text-center font-bold sm:text-2xl md:text-3xl md:w-1/2 lg:text-4xl lg:w-3/4">
+      <div className="text-primary mx-auto text-xl text-center font-semibold sm:text-2xl md:text-3xl md:w-1/2 lg:text-4xl lg:w-3/4">
         <section className="h-[50vh] relative mt-[17vh]">
           <motion.div
             className="absolute z-40 w-full top-1/3 h-80 bg-[#EEEEEE]"

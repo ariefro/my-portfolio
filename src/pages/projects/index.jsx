@@ -19,7 +19,7 @@ function ProjectsPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
         >
-          Some Things I’ve Built
+          Some Things I've Built
         </motion.h3>
         <ul className="flex flex-col space-y-7 pt-16 pb-24 pr-5 text-tertiary lg:w-2/3">
           <ProjectDescription

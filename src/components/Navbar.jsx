@@ -8,19 +8,19 @@ import { Icon } from ".";
 function Navbar({ className, bgLineColor }) {
   const [isNavExpand, setIsNavExpand] = useState(false);
 
-  const toogleNavItems = (prevState) => {
-    setIsNavExpand(!prevState);
+  const toogleNavItems = () => {
+    setIsNavExpand(!isNavExpand);
   };
 
   return (
-    <header className="max-w-7xl mx-auto">
+    <header className="max-w-7xl mx-auto text-lg">
       <motion.nav
         className={`${className} flex justify-between items-center h-28 md:h-24`}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2, delay: 0.2 }}
       >
-        <p className="text-lg font-semibold">PORTOFOLIO 2023</p>
+        <p className="font-semibold">PORTOFOLIO 2023</p>
         <div className="hidden font-semibold text-md md:flex space-x-20">
           <Link href="/">home</Link>
           <Link href="/about">about</Link>
@@ -30,13 +30,13 @@ function Navbar({ className, bgLineColor }) {
 
         {isNavExpand ? (
           <motion.div
-            className="absolute z-50 inset-0 bg-primary text-tertiary"
+            className="fixed z-50 inset-0 bg-primary text-tertiary"
             initial={{ opacity: 1, y: "-100vh" }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
             <motion.button
-              onClick={() => toogleNavItems(isNavExpand)}
+              onClick={() => toogleNavItems()}
               className="absolute top-9 right-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -45,7 +45,7 @@ function Navbar({ className, bgLineColor }) {
               <Icon.Close />
             </motion.button>
             <div className="flex flex-col font-semibold text-6xl space-y-6 mt-32 ml-4">
-              <Link href="/" onClick={() => toogleNavItems(isNavExpand)}>
+              <Link href="/">
                 <motion.span
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -54,7 +54,7 @@ function Navbar({ className, bgLineColor }) {
                   home
                 </motion.span>
               </Link>
-              <Link href="/about" onClick={() => toogleNavItems(isNavExpand)}>
+              <Link href="/about">
                 <motion.span
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -63,10 +63,7 @@ function Navbar({ className, bgLineColor }) {
                   about
                 </motion.span>
               </Link>
-              <Link
-                href="/projects"
-                onClick={() => toogleNavItems(isNavExpand)}
-              >
+              <Link href="/projects">
                 <motion.span
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -75,7 +72,7 @@ function Navbar({ className, bgLineColor }) {
                   projects
                 </motion.span>
               </Link>
-              <Link href="/contact" onClick={() => toogleNavItems(isNavExpand)}>
+              <Link href="/contact">
                 <motion.span
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -96,7 +93,7 @@ function Navbar({ className, bgLineColor }) {
           </motion.div>
         ) : (
           <button
-            onClick={() => toogleNavItems(isNavExpand)}
+            onClick={() => toogleNavItems()}
             className={`${className} md:hidden`}
           >
             <Icon.Hamburger />

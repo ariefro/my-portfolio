@@ -17,14 +17,14 @@ function App({ Component, pageProps }) {
       <motion.div key={router.pathname} className={hankenGrotest.className}>
         <Component {...pageProps} />
         <motion.div
-          className="absolute z-50 top-0 left-0 w-full h-full bg-secondary origin-bottom"
+          className="fixed z-50 top-0 bottom-0 left-0 w-full bg-secondary origin-bottom"
           initial={{ scaleY: 0 }}
           animate={{ scaleY: 0 }}
           exit={{ scaleY: 1 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
         ></motion.div>
         <motion.div
-          className="absolute z-50 top-0 left-0 w-full h-full bg-secondary origin-top"
+          className="fixed z-50 top-0 bottom-0 left-0 w-full bg-secondary origin-top"
           initial={{ scaleY: 1 }}
           animate={{ scaleY: 0 }}
           exit={{ scaleY: 0 }}

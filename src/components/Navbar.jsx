@@ -37,7 +37,7 @@ function Navbar({ className, bgLineColor }) {
           >
             <motion.button
               onClick={() => toogleNavItems()}
-              className="absolute top-9 right-4"
+              className="absolute top-9 right-5"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 2, delay: 2.4 }}
@@ -45,7 +45,7 @@ function Navbar({ className, bgLineColor }) {
               <Icon.Close />
             </motion.button>
             <div className="flex flex-col font-semibold text-6xl space-y-6 mt-32 ml-4">
-              <Link href="/">
+              <Link href="/" className="appearance-none">
                 <motion.span
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -94,6 +94,9 @@ function Navbar({ className, bgLineColor }) {
         ) : (
           <button
             onClick={() => toogleNavItems()}
+            id="hamburger"
+            aria-label="hamburger"
+            role="button"
             className={`${className} md:hidden`}
           >
             <Icon.Hamburger />

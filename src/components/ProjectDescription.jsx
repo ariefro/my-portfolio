@@ -26,7 +26,7 @@ function ProjectDescription({
         src={src}
         width={250}
         height={120}
-        className="mt-5 md:mt-0 md:w-64 md:h-36"
+        className="mt-5 rounded-md shadow-lg shadow-zinc-700 md:mt-0 md:w-64 md:h-36"
       />
       <div>
         <Link

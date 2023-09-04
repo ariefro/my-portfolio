@@ -45,42 +45,34 @@ function Navbar({ className, bgLineColor }) {
               <Icon.Close />
             </motion.button>
             <div className="flex flex-col font-semibold text-6xl space-y-6 mt-32 ml-4">
-              <Link href="/" className="appearance-none">
-                <motion.span
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 2, delay: 0.4 }}
-                >
-                  home
-                </motion.span>
-              </Link>
-              <Link href="/about">
-                <motion.span
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 2, delay: 0.8 }}
-                >
-                  about
-                </motion.span>
-              </Link>
-              <Link href="/projects">
-                <motion.span
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 2, delay: 1.2 }}
-                >
-                  projects
-                </motion.span>
-              </Link>
-              <Link href="/contact">
-                <motion.span
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 2, delay: 1.6 }}
-                >
-                  contact
-                </motion.span>
-              </Link>
+              <motion.span
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2, delay: 0.4 }}
+              >
+                <Link href="/">home</Link>
+              </motion.span>
+              <motion.span
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2, delay: 0.8 }}
+              >
+                <Link href="/about">about</Link>
+              </motion.span>
+              <motion.span
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2, delay: 1.2 }}
+              >
+                <Link href="/projects">projects</Link>
+              </motion.span>
+              <motion.span
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2, delay: 1.6 }}
+              >
+                <Link href="/contact">contact</Link>
+              </motion.span>
             </div>
             <motion.p
               className="absolute text-md bottom-5 ml-4"

@@ -30,11 +30,12 @@ function ProjectsPage() {
             description="Financial planning app that is Initiative project for mentoring
           program"
           >
-            <Tag label="Next.js" />
+            <Tag label="Next" />
             <Tag label="Tailwind CSS" />
             <Tag label="Redux" />
+            <Tag label="Node" />
             <Tag label="Express" />
-            <Tag label="Postgresql" />
+            <Tag label="Postgres" />
             <Tag label="Docker" />
           </ProjectDescription>
           <ProjectDescription
@@ -47,8 +48,7 @@ function ProjectsPage() {
         information about each track. Create and save new playlists of
         recommended tracks based on your existing playlists and more."
           >
-            <Tag label="Next.js" />
-            <Tag label="NextAuth.js" />
+            <Tag label="Next" />
             <Tag label="Tailwind CSS" />
             <Tag label="Chart.js" />
             <Tag label="Spotify API" />
@@ -60,8 +60,7 @@ function ProjectsPage() {
             delay={0.9}
             description="AI Chatbot with OpenAI API"
           >
-            <Tag label="Next.js" />
-            <Tag label="NextAuth.js" />
+            <Tag label="Next" />
             <Tag label="Tailwind CSS" />
             <Tag label="OpenAI API" />
             <Tag label="Firebase" />

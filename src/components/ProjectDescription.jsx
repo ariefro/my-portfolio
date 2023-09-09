@@ -39,7 +39,7 @@ function ProjectDescription({
           </span>
           <Icon.Arrow className="rotate-[45deg] translate-y-2.5 transition-transform group-hover:-translate-y-0 group-hover:translate-x-3 group-hover:text-quaternary" />
         </Link>
-        <p className="leading-5 mt-3">{description}</p>
+        <p className="leading-5 mt-3 text-justify">{description}</p>
         <ul className="flex flex-wrap gap-3 mt-5">{children}</ul>
       </div>
     </motion.li>

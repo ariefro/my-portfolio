@@ -33,7 +33,7 @@ function Sidebar() {
         <Icon.Linkedin />
       </Link>
       <Link
-        href="https://drive.google.com/file/d/1Ux4bfiJ8j4bDbr0YOd9H3QxQreY84XvQ/view?usp=sharing"
+        href="https://drive.google.com/file/d/1DxOBGL_VM-qHM2m0nvt-klPPoAssRZfy/view?usp=sharing"
         target="_blank"
         className="px-[0.82rem] py-2 rounded-l-lg bg-secondary"
       >

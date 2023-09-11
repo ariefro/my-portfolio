@@ -16,7 +16,7 @@ function ProjectDescription({
 }) {
   return (
     <motion.li
-      className="flex flex-col-reverse p-7 hover:bg-secondary rounded-lg md:flex-row md:space-x-5"
+      className="flex flex-col-reverse p-7 rounded-lg md:flex-row md:space-x-5"
       transition={{ duration: 2, delay: delay, ease: "easeInOut" }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

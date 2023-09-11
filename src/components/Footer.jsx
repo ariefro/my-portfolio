@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 function Footer({ className, buttonClassName }) {
   return (
     <motion.footer
-      className={`${className} absolute font-semibold flex flex-col items-center justify-center left-0 right-0 py-24 lg:flex-row lg:px-56`}
+      className={`${className} absolute font-semibold flex flex-col items-center justify-center left-0 right-0 py-20 lg:py-24 lg:flex-row lg:px-56`}
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,

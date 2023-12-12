@@ -22,10 +22,30 @@ function Navbar({ className, bgLineColor }) {
       >
         <p className="font-semibold">PORTOFOLIO 2023</p>
         <div className="hidden font-semibold text-md md:flex space-x-20">
-          <Link href="/">home</Link>
-          <Link href="/about">about</Link>
-          <Link href="/projects">projects</Link>
-          <Link href="/contact">contact</Link>
+          <Link
+            href="/"
+            className="hover:text-quaternary transition-all duration-200"
+          >
+            home
+          </Link>
+          <Link
+            href="/about"
+            className="hover:text-quaternary transition-all duration-200"
+          >
+            about
+          </Link>
+          <Link
+            href="/projects"
+            className="hover:text-quaternary transition-all duration-200"
+          >
+            projects
+          </Link>
+          <Link
+            href="/contact"
+            className="hover:text-quaternary transition-all duration-200"
+          >
+            contact
+          </Link>
         </div>
 
         {isNavExpand ? (
@@ -37,7 +57,7 @@ function Navbar({ className, bgLineColor }) {
           >
             <motion.button
               onClick={() => toogleNavItems()}
-              className="absolute top-9 right-5"
+              className="absolute top-9 right-5 hover:text-quaternary transition-all duration-200"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 2, delay: 2.4 }}
@@ -50,28 +70,48 @@ function Navbar({ className, bgLineColor }) {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 2, delay: 0.4 }}
               >
-                <Link href="/">home</Link>
+                <Link
+                  href="/"
+                  className="hover:text-quaternary transition-all duration-200"
+                >
+                  home
+                </Link>
               </motion.span>
               <motion.span
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 2, delay: 0.8 }}
               >
-                <Link href="/about">about</Link>
+                <Link
+                  href="/about"
+                  className="hover:text-quaternary transition-all duration-200"
+                >
+                  about
+                </Link>
               </motion.span>
               <motion.span
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 2, delay: 1.2 }}
               >
-                <Link href="/projects">projects</Link>
+                <Link
+                  href="/projects"
+                  className="hover:text-quaternary transition-all duration-200"
+                >
+                  projects
+                </Link>
               </motion.span>
               <motion.span
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 2, delay: 1.6 }}
               >
-                <Link href="/contact">contact</Link>
+                <Link
+                  href="/contact"
+                  className="hover:text-quaternary transition-all duration-200"
+                >
+                  contact
+                </Link>
               </motion.span>
             </div>
             <motion.p

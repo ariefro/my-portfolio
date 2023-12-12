@@ -20,7 +20,7 @@ function Sidebar() {
       <Link
         href="https://github.com/ariefro"
         target="_blank"
-        className="flex flex-col items-center space-y-4 pt-7 pb-3 rounded-l-lg bg-secondary"
+        className="flex flex-col items-center space-y-4 pt-7 pb-3 rounded-l-lg bg-secondary hover:bg-zinc-600 transition-all duration-300"
       >
         <p className="-rotate-90">Github</p>
         <Icon.Github className="-rotate-90" />
@@ -28,14 +28,14 @@ function Sidebar() {
       <Link
         href="https://www.linkedin.com/in/ariefromadhon/"
         target="_blank"
-        className="px-3 py-2 rounded-l-lg bg-secondary"
+        className="px-3 py-2 rounded-l-lg bg-secondary hover:bg-zinc-600 transition-all duration-300"
       >
         <Icon.Linkedin />
       </Link>
       <Link
         href="https://drive.google.com/file/d/1iWNW1Q7GTTXZ0Y0Y9K2cHC0qrkgUHhaE/view?usp=sharing"
         target="_blank"
-        className="px-[0.82rem] py-2 rounded-l-lg bg-secondary"
+        className="px-[0.82rem] py-2 rounded-l-lg bg-secondary hover:bg-zinc-600 transition-all duration-300"
       >
         CV
       </Link>

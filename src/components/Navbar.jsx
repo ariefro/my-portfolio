@@ -20,7 +20,7 @@ function Navbar({ className, bgLineColor }) {
         animate={{ opacity: 1 }}
         transition={{ duration: 2, delay: 0.2 }}
       >
-        <p className="font-semibold">PORTOFOLIO 2023</p>
+        <p className="font-semibold">PORTOFOLIO 2024</p>
         <div className="hidden font-semibold text-md md:flex space-x-20">
           <Link
             href="/"

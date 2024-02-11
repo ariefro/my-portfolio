@@ -17,7 +17,7 @@ function ProjectDescription({
   return (
     <Link href={href} className="group transition-all duration-300">
       <motion.li
-        className="flex flex-col-reverse p-7 rounded-lg md:flex-row md:space-x-5"
+        className="flex flex-col-reverse rounded-lg md:flex-row md:space-x-5"
         transition={{ duration: 2, delay: delay, ease: "easeInOut" }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -37,7 +37,7 @@ function ProjectDescription({
             <Icon.Arrow className="rotate-[45deg] translate-y-2.5 transition-transform group-hover:-translate-y-0 group-hover:translate-x-3 group-hover:text-quaternary" />
           </div>
 
-          <p className="leading-5 mt-3 text-justify">{description}</p>
+          <p className="leading-5 mt-3">{description}</p>
         </div>
       </motion.li>
     </Link>

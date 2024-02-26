@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #222831;
+  background: #EEEEEE;
+}
+
+@layer components {
+  .bg-primary {
+    @apply bg-[#222831]
+  }
+
+  .bg-secondary {
+      @apply bg-[#393E46]
+  }
+
+  .bg-tertiary {
+      @apply bg-[#EEEEEE]
+  }
+
+  .bg-quaternary {
+    @apply bg-[#00ADB5]
+  }
+
+  .text-primary {
+    @apply text-[#222831]
+  }
+
+  .text-secondary {
+      @apply text-[#393E46]
+  }
+
+  .text-tertiary {
+      @apply text-[#EEEEEE]
+  }
+
+  .text-quaternary {
+    @apply text-[#00ADB5]
+  }
+
+  .about-content {
+    @apply h-full flex items-center justify-center transform transition-opacity duration-500
+  }
+}

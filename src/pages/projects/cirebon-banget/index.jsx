@@ -78,7 +78,7 @@ function CirebonBanget() {
           transition={{ duration: 2, delay: 0.9, ease: "easeInOut" }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="my-20"
+          className="mt-20"
         >
           <Image
             alt="thumbnail"
@@ -90,7 +90,7 @@ function CirebonBanget() {
             className="hidden rounded-md shadow-lg shadow-zinc-700 lg:block mx-auto lg:w-8/12 lg:h-fit"
           />
         </motion.div>
-        <div className="h-28"></div>
+        <div className="h-5 lg:h-28"></div>
         <Sidebar />
         <Footer
           className="bg-tertiary text-primary"

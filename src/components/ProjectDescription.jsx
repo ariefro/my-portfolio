@@ -6,14 +6,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Icon } from ".";
 
-function ProjectDescription({
-  href,
-  title,
-  description,
-  src,
-  delay,
-  children,
-}) {
+function ProjectDescription({ href, title, description, delay }) {
   return (
     <Link href={href} className="group transition-all duration-300">
       <motion.li
@@ -22,13 +15,6 @@ function ProjectDescription({
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
-        {/* <Image
-          alt="thumbnail"
-          src={src}
-          width={250}
-          height={120}
-          className="mt-10 rounded-md shadow-lg shadow-zinc-700 md:mt-0 md:w-64 md:h-36"
-        /> */}
         <div>
           <div className="group inline-flex space-x-5 transition-all duration-300">
             <span className="text-2xl font-bold transition-all ease-in-out duration-300 group-hover:text-quaternary">

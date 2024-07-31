@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
+  Carousel,
   Footer,
   KeyFeature,
   KeyFeatures,
@@ -10,7 +11,17 @@ import {
   Sidebar,
   Tag,
 } from "@/components";
-import Image from "next/image";
+
+const images = [
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722416929/projects/cirebon%20banget/Screenshot_2024-07-31_at_15.40.13_gqlscl.png",
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722416927/projects/cirebon%20banget/Screenshot_2024-07-31_at_15.41.37_dmlzwq.png",
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722416921/projects/cirebon%20banget/Screenshot_2024-07-31_at_15.47.07_um85np.png",
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722418995/projects/cirebon%20banget/Screenshot_2024-07-31_at_16.16.46_iite6m.png",
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722417069/projects/cirebon%20banget/Screenshot_2024-07-31_at_16.10.49_bh5knz.png",
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722416914/projects/cirebon%20banget/Screenshot_2024-07-31_at_15.52.58_gveq2p.png",
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722419128/projects/cirebon%20banget/Screenshot_2024-07-31_at_16.45.13_jslckt.png",
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722418996/projects/cirebon%20banget/Screenshot_2024-07-31_at_16.40.44_vxhzer.png",
+];
 
 function CirebonBanget() {
   return (
@@ -29,7 +40,7 @@ function CirebonBanget() {
           <ProjectDetail
             title="About"
             href="https://cirebon-banget-web.vercel.app/"
-            src="https://i.ibb.co/r3JgV6H/Screenshot-2024-02-07-at-17-55-28.png"
+            images={images}
             delay={0.3}
             description="Cirebon Banget is a community portal web application, serves as a
             platform to showcase the existence, achievements, and creativity
@@ -74,21 +85,14 @@ function CirebonBanget() {
             />
           </KeyFeatures>
         </div>
+
         <motion.div
           transition={{ duration: 2, delay: 0.9, ease: "easeInOut" }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="mt-20"
+          className="my-10 hidden lg:block lg:w-8/12 lg:h-fit mx-auto"
         >
-          <Image
-            alt="thumbnail"
-            src={
-              "https://i.ibb.co/r3JgV6H/Screenshot-2024-02-07-at-17-55-28.png"
-            }
-            width={2160}
-            height={1600}
-            className="hidden rounded-md shadow-lg shadow-zinc-700 lg:block mx-auto lg:w-8/12 lg:h-fit"
-          />
+          <Carousel images={images} />
         </motion.div>
         <div className="h-5 lg:h-28"></div>
         <Sidebar />

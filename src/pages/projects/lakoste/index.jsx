@@ -36,7 +36,7 @@ function Lakoste() {
           Lakoste
         </motion.h3>
 
-        <div className="space-y-9 text-tertiary lg:flex lg:space-x-24 lg:space-y-0">
+        <div className="space-y-9 text-tertiary mb-24 lg:flex lg:space-x-24 lg:space-y-0">
           <ProjectDetail
             title="About"
             href="https://lakoste.vercel.app/"
@@ -82,11 +82,11 @@ function Lakoste() {
           transition={{ duration: 2, delay: 0.9, ease: "easeInOut" }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="mt-20 flex justify-center items-center lg:w-8/12 lg:h-fit mx-auto rounded-xl overflow-hidden"
+          className="hidden mt-20 lg:block justify-center items-center lg:w-8/12 lg:h-fit mx-auto rounded-xl overflow-hidden"
         >
           <Carousel images={images} />
         </motion.div>
-        <div className="h-12 lg:h-28"></div>
+        <div className="h-5 lg:h-28"></div>
         <Sidebar />
         <Footer
           className="bg-tertiary text-primary"

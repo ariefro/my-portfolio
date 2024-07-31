@@ -36,7 +36,7 @@ function CirebonBanget() {
         >
           Cirebon Banget
         </motion.h3>
-        <div className="space-y-9 text-tertiary lg:flex lg:space-x-24 lg:space-y-0">
+        <div className="space-y-9 text-tertiary mb-24 lg:flex lg:space-x-24 lg:space-y-0">
           <ProjectDetail
             title="About"
             href="https://cirebon-banget-web.vercel.app/"

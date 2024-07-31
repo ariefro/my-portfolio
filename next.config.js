@@ -5,7 +5,7 @@ const nextConfig = {
     defaultLocale: "en",
   },
   images: {
-    domains: ["i.ibb.co"],
+    domains: ["res.cloudinary.com"],
   },
 };
 

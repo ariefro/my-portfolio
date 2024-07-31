@@ -1,11 +1,11 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { Carousel } from ".";
 
-function ProjectDetail({ title, description, href, src, delay, children }) {
+function ProjectDetail({ title, description, href, images, delay, children }) {
   return (
     <motion.div
       className="px-9 rounded-lg lg:w-1/2 lg:pl-0 lg:pr-4"
@@ -16,6 +16,14 @@ function ProjectDetail({ title, description, href, src, delay, children }) {
       <span className="text-2xl font-bold transition-all ease-in-out duration-300">
         {title}
       </span>
+      <motion.div
+        transition={{ duration: 2, delay: 0.9, ease: "easeInOut" }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="lg:hidden my-7 flex justify-center items-center lg:w-8/12 lg:h-fit mx-auto"
+      >
+        <Carousel images={images} />
+      </motion.div>
       <p className="leading-5 mt-3">{description}</p>
       <ul className="flex flex-wrap gap-3 my-8">{children}</ul>
       <Link
@@ -25,13 +33,6 @@ function ProjectDetail({ title, description, href, src, delay, children }) {
       >
         Visit website
       </Link>
-      <Image
-        alt="thumbnail"
-        src={src}
-        width={360}
-        height={210}
-        className="mt-10 rounded-md shadow-lg shadow-zinc-700 lg:hidden"
-      />
     </motion.div>
   );
 }

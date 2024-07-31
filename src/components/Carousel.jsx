@@ -22,14 +22,15 @@ function CarouselCustomNavigation({ images }) {
       )}
     >
       {images.map((src, index) => (
-        <Image
-          key={index}
-          alt={`thumbnail-${index}`}
-          src={src}
-          width={2160}
-          height={1600}
-          className="rounded-md shadow-lg shadow-zinc-700 lg:block px-4 mx-auto"
-        />
+        <div key={index} className="relative rounded-xl overflow-hidden">
+          <Image
+            alt={`thumbnail-${index}`}
+            src={src}
+            width={1280}
+            height={690}
+            className="object-cover w-full h-full"
+          />
+        </div>
       ))}
     </Carousel>
   );

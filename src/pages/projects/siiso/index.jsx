@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
+  Carousel,
   Footer,
   KeyFeature,
   KeyFeatures,
@@ -10,7 +11,14 @@ import {
   Sidebar,
   Tag,
 } from "@/components";
-import Image from "next/image";
+
+const images = [
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722386740/projects/siiso/Screenshot_2024-07-30_at_21.09.05_saqrho.png",
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722386743/projects/siiso/Screenshot_2024-07-30_at_21.09.25_aclrzv.png",
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722386741/projects/siiso/Screenshot_2024-07-30_at_21.10.24_vmhx7q.png",
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722386740/projects/siiso/Screenshot_2024-07-30_at_21.10.45_u8bn4m.png",
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722398524/projects/siiso/Screenshot_2024-07-31_at_11.01.39_nsgnnu.png",
+];
 
 function Siiso() {
   return (
@@ -25,11 +33,12 @@ function Siiso() {
         >
           Siiso
         </motion.h3>
+
         <div className="space-y-9 text-tertiary lg:flex lg:space-x-24 lg:space-y-0">
           <ProjectDetail
             title="About"
             href="https://sisoo.vercel.app/"
-            src="https://i.ibb.co/cbZ9Tjh/Screenshot-2023-08-30-at-10-33-14.png"
+            images={images}
             delay={0.3}
             description="Siiso is web app for visualizing personalized Spotify data. View your top
             artists, top tracks, recently played tracks, and detailed audio
@@ -42,6 +51,7 @@ function Siiso() {
             <Tag label="Chart.js" />
             <Tag label="Spotify API" />
           </ProjectDetail>
+
           <KeyFeatures>
             <KeyFeature
               text={
@@ -65,23 +75,16 @@ function Siiso() {
             />
           </KeyFeatures>
         </div>
+
         <motion.div
           transition={{ duration: 2, delay: 0.9, ease: "easeInOut" }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="mt-20"
+          className="my-10 lg:mt-20 hidden lg:block lg:w-8/12 lg:h-fit mx-auto"
         >
-          <Image
-            alt="thumbnail"
-            src={
-              "https://i.ibb.co/cbZ9Tjh/Screenshot-2023-08-30-at-10-33-14.png"
-            }
-            width={2160}
-            height={1600}
-            className="hidden rounded-md shadow-lg shadow-zinc-700 lg:block mx-auto lg:w-8/12 lg:h-fit"
-          />
+          <Carousel images={images} />
         </motion.div>
-        <div className="h-5 lg:h-28"></div>
+        <div className="h-28"></div>
         <Sidebar />
         <Footer
           className="bg-tertiary text-primary"

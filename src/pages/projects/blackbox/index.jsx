@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
+  Carousel,
   Footer,
   KeyFeature,
   KeyFeatures,
@@ -10,7 +11,11 @@ import {
   Sidebar,
   Tag,
 } from "@/components";
-import Image from "next/image";
+
+const images = [
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722419444/projects/blackbox/Screenshot_2024-07-31_at_16.50.30_gebhvx.png",
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722419403/projects/blackbox/Screenshot_2024-07-31_at_16.49.37_swofwg.png",
+];
 
 function Blackbox() {
   return (
@@ -29,7 +34,7 @@ function Blackbox() {
           <ProjectDetail
             title="About"
             href="https://blackboxai.vercel.app/"
-            src="https://i.ibb.co/h9ZdPrS/Screenshot-2023-08-30-at-11-06-29.png"
+            images={images}
             delay={0.3}
             description="Introducing Blackbox, the intelligent AI chatbot app powered by the cutting-edge OpenAI API. Blackbox is designed to be your knowledgeable conversational partner, ready to assist, inform, and engage in insightful discussions anytime, anywhere."
           >
@@ -52,21 +57,14 @@ function Blackbox() {
             />
           </KeyFeatures>
         </div>
+
         <motion.div
           transition={{ duration: 2, delay: 0.9, ease: "easeInOut" }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="mt-20"
+          className="my-10 lg:mt-20 hidden lg:flex justify-center items-center lg:w-8/12 lg:h-fit mx-auto"
         >
-          <Image
-            alt="thumbnail"
-            src={
-              "https://i.ibb.co/h9ZdPrS/Screenshot-2023-08-30-at-11-06-29.png"
-            }
-            width={2160}
-            height={1600}
-            className="hidden rounded-md shadow-lg shadow-zinc-700 lg:block mx-auto lg:w-8/12 lg:h-fit"
-          />
+          <Carousel images={images} />
         </motion.div>
         <div className="h-5 lg:h-28"></div>
         <Sidebar />

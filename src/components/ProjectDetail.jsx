@@ -16,6 +16,7 @@ function ProjectDetail({ title, description, href, images, delay, children }) {
       <span className="text-2xl font-bold transition-all ease-in-out duration-300">
         {title}
       </span>
+      <p className="leading-5 mt-3">{description}</p>
       <motion.div
         transition={{ duration: 2, delay: 0.9, ease: "easeInOut" }}
         initial={{ opacity: 0 }}
@@ -24,7 +25,6 @@ function ProjectDetail({ title, description, href, images, delay, children }) {
       >
         <Carousel images={images} />
       </motion.div>
-      <p className="leading-5 mt-3">{description}</p>
       <ul className="flex flex-wrap gap-3 my-8">{children}</ul>
       <Link
         href={href}

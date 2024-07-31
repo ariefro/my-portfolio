@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
+  Carousel,
   Footer,
   KeyFeature,
   KeyFeatures,
@@ -10,7 +11,16 @@ import {
   Sidebar,
   Tag,
 } from "@/components";
-import Image from "next/image";
+
+const images = [
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722396803/projects/lakoste/Cover_preview_mq5edu.jpg",
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722397756/projects/lakoste/Screenshot_2024-07-31_at_10.48.57_ub63dq.png",
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722397756/projects/lakoste/Screenshot_2024-07-31_at_10.48.51_toutav.png",
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722397755/projects/lakoste/Screenshot_2024-07-31_at_10.46.18_u8oh2a.png",
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722397755/projects/lakoste/Screenshot_2024-07-31_at_10.46.48_tjii3y.png",
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722397473/projects/lakoste/Screenshot_2024-07-31_at_10.44.10_fg9r7c.png",
+  "https://res.cloudinary.com/ddcummtld/image/upload/v1722397755/projects/lakoste/Screenshot_2024-07-31_at_10.46.04_rhhyfn.png",
+];
 
 function Lakoste() {
   return (
@@ -25,11 +35,12 @@ function Lakoste() {
         >
           Lakoste
         </motion.h3>
+
         <div className="space-y-9 text-tertiary lg:flex lg:space-x-24 lg:space-y-0">
           <ProjectDetail
             title="About"
             href="https://lakoste.vercel.app/"
-            src="https://i.ibb.co/VgqbD1s/Cover-preview.png"
+            images={images}
             delay={0.3}
             description="Lakoste is a financial planning app. This is a mentoring project designed to cultivate a supportive community for colleagues who have recently completed bootcamp training, preparing them for job applications and hands-on experience in building industry-like applications. As a backend developer and a passionate advocate for tech enthusiasts, I'm thrilled to be a part of Lakoste, an initiative I've been actively involved in. My role as a backend developer is to contribute technical expertise to this endeavor."
           >
@@ -66,21 +77,16 @@ function Lakoste() {
             />
           </KeyFeatures>
         </div>
+
         <motion.div
           transition={{ duration: 2, delay: 0.9, ease: "easeInOut" }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="mt-20"
+          className="mt-20 flex justify-center items-center lg:w-8/12 lg:h-fit mx-auto rounded-xl overflow-hidden"
         >
-          <Image
-            alt="thumbnail"
-            src={"https://i.ibb.co/VgqbD1s/Cover-preview.png"}
-            width={2160}
-            height={1600}
-            className="hidden rounded-md shadow-lg shadow-zinc-700 lg:block mx-auto lg:w-8/12 lg:h-fit"
-          />
+          <Carousel images={images} />
         </motion.div>
-        <div className="h-5 lg:h-28"></div>
+        <div className="h-12 lg:h-28"></div>
         <Sidebar />
         <Footer
           className="bg-tertiary text-primary"

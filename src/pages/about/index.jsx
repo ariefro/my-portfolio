@@ -35,12 +35,12 @@ function AboutPage() {
   return (
     <PageWrapper className="bg-tertiary">
       <Navbar className="text-primary" bgLineColor="bg-secondary" />
-      <div className="text-primary max-w-7xl mx-auto text-xl text-center font-semibold sm:text-2xl md:text-3xl md:w-1/2 lg:text-4xl lg:w-3/4">
+      <div className="text-primary max-w-7xl mx-auto text-xl text-center font-bold sm:text-2xl md:text-3xl md:w-1/2 lg:text-4xl lg:w-3/4">
         <About
           className={"relative mt-[17vh]"}
           id={"content-one"}
           text={
-            "I am a Mechanical Engineering graduate with both an associate and a bachelor's degree. My fascination expanded, though, as I started to appreciate the mesmerizing beauty of web and app design and how an application could address so many issues."
+            "I am a Mechanical Engineering graduate with both an associate and a bachelor's degree. I worked as an Engineer for four years, specialized in jet engines for aircraft."
           }
           isVisible={isVisible}
         >
@@ -54,21 +54,21 @@ function AboutPage() {
         <About
           id={"content-two"}
           text={
-            "I am a Mechanical Engineering graduate with both an associate and a bachelor's degree. My fascination expanded, though, as I started to appreciate the mesmerizing beauty of web and app design and how an application could address so many issues."
+            "However, I gradually began to notice the beauty in web and application design, as well as the way an application could solve so many real-world problems. This sparked a growing interest in me, and from that point forward, I became deeply fascinated by the intersection of creativity and technology."
           }
           isVisible={isVisible}
         />
         <About
           id={"content-three"}
           text={
-            " I've been on a quest to learn full-stack web development since 2021, and in 2022 I made the career switch to being a backend developer."
+            "I've been on a quest to learn full-stack web development since 2021, and in 2022 I made the career switch to being a backend developer."
           }
           isVisible={isVisible}
         />
         <About
           id={"content-four"}
           text={
-            "When I'm not using the computer, I'm usually reading a book, practicing archery, or spending time with my wife and child."
+            "I have a strong drive for creating efficient solutions and a constant thirst for learning new technologies. I find joy in crafting the architecture and logic that enable a product to function smoothly, ensuring that the technology behind the scenes is both scalable and secure."
           }
           isVisible={isVisible}
         />

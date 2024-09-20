@@ -23,7 +23,7 @@ function ProjectDescription({ href, title, description, delay }) {
             <Icon.Arrow className="rotate-[45deg] translate-y-2.5 transition-transform group-hover:-translate-y-0 group-hover:translate-x-3 group-hover:text-quaternary" />
           </div>
 
-          <p className="leading-5 mt-3">{description}</p>
+          <p className="leading-5 mt-3 w-3/4 lg:w-full">{description}</p>
         </div>
       </motion.li>
     </Link>

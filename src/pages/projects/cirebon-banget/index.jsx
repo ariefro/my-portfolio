@@ -60,27 +60,32 @@ function CirebonBanget() {
           <KeyFeatures>
             <KeyFeature
               text={
-                "User Profiles: Users can create personalized profiles to engage with the community, share their achievements, and connect with others."
+                "Users can create personalized profiles, update profile pictures, and manage personal information securely. Users can also track their published articles, bookmarked content, and other activity history."
               }
             />
             <KeyFeature
               text={
-                "Content Showcase: A platform to showcase various aspects of Cirebon Raya's culture, including arts, music, traditions, cuisine, and local events."
+                "A platform for users to publish articles highlighting various aspects of Cirebon Raya’s culture, including arts, music, traditions, cuisine, and local events. Users can search and filter articles by category, tag, or title."
               }
             />
             <KeyFeature
               text={
-                "Engaging Content: Curated and user-generated content to highlight the creativity, talent, and achievements of the community members, particularly focusing on the youth."
+                "Curated and user-generated content where users can contribute articles, leave comments, and interact through likes and bookmarks, fostering engagement and community participation."
               }
             />
             <KeyFeature
               text={
-                "Interactive Forums: Discussion forums where users can exchange ideas, share experiences, and discuss topics related to Cirebon Raya's culture, heritage, and contemporary issues."
+                "Secure user authentication system, including Google login, email verification, and password reset."
               }
             />
             <KeyFeature
               text={
-                "Community Blog: A platform for community members, local artists, historians, and enthusiasts to contribute articles, stories, and insights about Cirebon's culture and heritage."
+                "Real-time notifications keep users updated on relevant interactions, such as new comments on their articles or other significant activities requiring their attention."
+              }
+            />
+            <KeyFeature
+              text={
+                "Users can request membership within the community, enabling role-based access or privileges within the platform."
               }
             />
           </KeyFeatures>

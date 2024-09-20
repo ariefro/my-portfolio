@@ -26,14 +26,14 @@ function Sidebar() {
         <Icon.Github className="-rotate-90" />
       </Link>
       <Link
-        href="https://www.linkedin.com/in/ariefromadhon/"
+        href="https://www.linkedin.com/in/arief-romadhon/"
         target="_blank"
         className="px-3 py-2 rounded-l-lg bg-secondary hover:bg-zinc-600 transition-all duration-300"
       >
         <Icon.Linkedin />
       </Link>
       <Link
-        href="https://drive.google.com/file/d/1DNJcASCr9ufZQizGNoOnt4hpK-2Zj3-6/view?usp=sharing"
+        href="https://drive.google.com/file/d/1ApMViZZTO4UERnsx0qoPxpN_sa_QxmKC/view?usp=sharing"
         target="_blank"
         className="px-[0.82rem] py-2 rounded-l-lg bg-secondary hover:bg-zinc-600 transition-all duration-300"
       >

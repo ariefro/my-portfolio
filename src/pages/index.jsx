@@ -38,8 +38,7 @@ function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
           >
-            Currently looking for opportunities as a backend or frontend
-            developer
+            Currently looking for opportunities as a backend developer
           </motion.p>
           <motion.div
             className="absolute bottom-5 text-sm md:text-lg"

@@ -1,6 +1,6 @@
 function BackendContributions() {
   return (
-    <div className="text-tertiary mt-24 px-9 lg:w-2/3">
+    <div className="text-tertiary mt-10 lg:mt-24 px-9 lg:w-2/3">
       <h2 className="text-2xl font-bold mb-4">
         My Role as a Backend Developer
       </h2>

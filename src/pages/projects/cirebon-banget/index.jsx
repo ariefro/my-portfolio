@@ -11,6 +11,8 @@ import {
   Sidebar,
   Tag,
 } from "@/components";
+import BackendContributions from "@/components/projects/cirebon-banget/BackendContributions";
+import FrontendContributions from "@/components/projects/cirebon-banget/FrontendContributions";
 
 const images = [
   "https://res.cloudinary.com/ddcummtld/image/upload/v1722416929/projects/cirebon%20banget/Screenshot_2024-07-31_at_15.40.13_gqlscl.png",
@@ -42,10 +44,7 @@ function CirebonBanget() {
             href="https://cirebon-banget-web.vercel.app/"
             images={images}
             delay={0.3}
-            description="Cirebon Banget is a community portal web application, serves as a
-            platform to showcase the existence, achievements, and creativity
-            presented with engaging content to enhance the cultural literacy of the
-            community, particularly the youth of Cirebon Raya. The application is currently under development."
+            description="Cirebon Banget is a community portal web application that serves as a platform to showcase the existence, achievements, and creativity presented with engaging content to enhance the cultural literacy of the community, particularly the youth of Cirebon Raya."
           >
             <Tag label="Javascript" />
             <Tag label="Next.js" />
@@ -55,6 +54,7 @@ function CirebonBanget() {
             <Tag label="Go Fiber" />
             <Tag label="PostgreSQL" />
             <Tag label="GORM" />
+            <Tag label="Redis" />
             <Tag label="Docker" />
           </ProjectDetail>
           <KeyFeatures>
@@ -99,7 +99,25 @@ function CirebonBanget() {
         >
           <Carousel images={images} />
         </motion.div>
+
+        <div className="text-tertiary mt-24 px-9">
+          <h2 className="text-2xl font-bold mb-4">My Role and Contributions</h2>
+
+          <p className="mb-4">
+            As the <strong>Backend Developer</strong>, I was responsible for
+            designing and implementing the entire backend infrastructure,
+            focusing on building a secure, scalable, and high-performance
+            system. Additionally, I contributed to frontend development to
+            ensure a smooth and cohesive user experience. Below are my specific
+            contributions:
+          </p>
+
+          <BackendContributions />
+          <FrontendContributions />
+        </div>
+
         <div className="h-5 lg:h-28"></div>
+
         <Sidebar />
         <Footer
           className="bg-tertiary text-primary"

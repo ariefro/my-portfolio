@@ -11,6 +11,7 @@ import {
   Sidebar,
   Tag,
 } from "@/components";
+import BackendContributions from "@/components/projects/lakoste/BackendContributions";
 
 const images = [
   "https://res.cloudinary.com/ddcummtld/image/upload/v1722396803/projects/lakoste/Cover_preview_mq5edu.jpg",
@@ -42,7 +43,7 @@ function Lakoste() {
             href="https://lakoste.vercel.app/"
             images={images}
             delay={0.3}
-            description="Lakoste is a financial planning app. This is a mentoring project designed to cultivate a supportive community for colleagues who have recently completed bootcamp training, preparing them for job applications and hands-on experience in building industry-like applications. As a backend developer and a passionate advocate for tech enthusiasts, I'm thrilled to be a part of Lakoste, an initiative I've been actively involved in. My role as a backend developer is to contribute technical expertise to this endeavor."
+            description="Lakoste is a financial planning application designed as part of a mentoring initiative. The primary goal of this project is to foster a supportive community for recent bootcamp graduates, providing them with real-world experience in building industry-grade applications while preparing them for job applications. As a backend developer and a committed advocate for nurturing tech talent, I’m excited to contribute to Lakoste and be part of a project that bridges the gap between training and practical experience."
           >
             <Tag label="Javascript" />
             <Tag label="Next.js" />
@@ -62,17 +63,17 @@ function Lakoste() {
             />
             <KeyFeature
               text={
-                "Mentoring and community building: The project fosters a supportive community where colleagues can engage in mentoring and collaborative learning."
+                "Mentorship and Community: The project promotes a collaborative environment where participants can seek mentorship, share knowledge, and grow together through peer learning."
               }
             />
             <KeyFeature
               text={
-                "Industry-like app development: Participants gain hands-on experience in building applications similar to those found in the industry."
+                "Industry-Like Application Development: Participants gain hands-on experience in developing features and systems that mirror real-world applications, preparing them for professional roles in the tech industry."
               }
             />
             <KeyFeature
               text={
-                "Playground for feature development: The app offers a platform for exploring and developing various features, allowing participants to enhance their skills and creativity."
+                "Feature Development Playground: Lakoste acts as a sandbox for creativity, enabling developers to ideate, experiment, and implement various features that align with industry standards."
               }
             />
           </KeyFeatures>
@@ -86,6 +87,9 @@ function Lakoste() {
         >
           <Carousel images={images} />
         </motion.div>
+
+        <BackendContributions />
+
         <div className="h-5 lg:h-28"></div>
         <Sidebar />
         <Footer

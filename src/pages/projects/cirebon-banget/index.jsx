@@ -42,7 +42,7 @@ function CirebonBanget() {
         <div className="space-y-9 text-tertiary mb-10 lg:mb-24 lg:flex lg:space-x-24 lg:space-y-0">
           <ProjectDetail
             title="About"
-            href="https://cirebon-banget-web.vercel.app/"
+            href="https://www.cirebonbanget.com/"
             images={images}
             delay={0.3}
             description="Cirebon Banget is a community portal web application that serves as a platform to showcase the existence, achievements, and creativity presented with engaging content to enhance the cultural literacy of the community, particularly the youth of Cirebon Raya."

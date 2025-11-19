@@ -35,10 +35,10 @@ function Navbar({ className, bgLineColor }) {
             about
           </Link>
           <Link
-            href="/projects"
+            href="/work"
             className="hover:text-quaternary transition-all duration-200"
           >
-            projects
+            work
           </Link>
           <Link
             href="/contact"
@@ -95,10 +95,10 @@ function Navbar({ className, bgLineColor }) {
                 transition={{ duration: 2, delay: 1.2 }}
               >
                 <Link
-                  href="/projects"
+                  href="/work"
                   className="hover:text-quaternary transition-all duration-200"
                 >
-                  projects
+                  work
                 </Link>
               </motion.span>
               <motion.span

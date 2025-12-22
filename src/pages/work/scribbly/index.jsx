@@ -13,10 +13,10 @@ import {
 } from "@/components";
 
 const images = [
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1736775055/projects/scribbly/Screenshot_2025-01-13_at_18.45.56_xc6cm5.png",
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1736775055/projects/scribbly/Screenshot_2025-01-13_at_18.50.07_e04fkn.png",
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1736778990/projects/scribbly/Screenshot_2025-01-13_at_21.35.44_ihptfy.png",
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1736778990/projects/scribbly/Screenshot_2025-01-13_at_21.34.30_qdsxuc.png",
+  "/projects/scribbly/1.png",
+  "/projects/scribbly/2.png",
+  "/projects/scribbly/3.png",
+  "/projects/scribbly/4.png",
 ];
 
 function Siiso() {

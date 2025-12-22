@@ -15,14 +15,17 @@ import BackendContributions from "@/components/projects/cirebon-banget/BackendCo
 import FrontendContributions from "@/components/projects/cirebon-banget/FrontendContributions";
 
 const images = [
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1722416929/projects/cirebon%20banget/Screenshot_2024-07-31_at_15.40.13_gqlscl.png",
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1722416927/projects/cirebon%20banget/Screenshot_2024-07-31_at_15.41.37_dmlzwq.png",
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1722416921/projects/cirebon%20banget/Screenshot_2024-07-31_at_15.47.07_um85np.png",
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1722418995/projects/cirebon%20banget/Screenshot_2024-07-31_at_16.16.46_iite6m.png",
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1722417069/projects/cirebon%20banget/Screenshot_2024-07-31_at_16.10.49_bh5knz.png",
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1722416914/projects/cirebon%20banget/Screenshot_2024-07-31_at_15.52.58_gveq2p.png",
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1722419128/projects/cirebon%20banget/Screenshot_2024-07-31_at_16.45.13_jslckt.png",
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1722418996/projects/cirebon%20banget/Screenshot_2024-07-31_at_16.40.44_vxhzer.png",
+  "/projects/ciba/1.png",
+  "/projects/ciba/2.png",
+  "/projects/ciba/3.png",
+  "/projects/ciba/4.png",
+  "/projects/ciba/5.png",
+  "/projects/ciba/6.png",
+  "/projects/ciba/7.png",
+  "/projects/ciba/8.png",
+  "/projects/ciba/9.png",
+  "/projects/ciba/10.png",
+  "/projects/ciba/11.png",
 ];
 
 function CirebonBanget() {

@@ -14,13 +14,13 @@ import {
 import BackendContributions from "@/components/projects/lakoste/BackendContributions";
 
 const images = [
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1722396803/projects/lakoste/Cover_preview_mq5edu.jpg",
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1722397756/projects/lakoste/Screenshot_2024-07-31_at_10.48.57_ub63dq.png",
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1722397756/projects/lakoste/Screenshot_2024-07-31_at_10.48.51_toutav.png",
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1722397755/projects/lakoste/Screenshot_2024-07-31_at_10.46.18_u8oh2a.png",
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1722397755/projects/lakoste/Screenshot_2024-07-31_at_10.46.48_tjii3y.png",
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1722397473/projects/lakoste/Screenshot_2024-07-31_at_10.44.10_fg9r7c.png",
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1722397755/projects/lakoste/Screenshot_2024-07-31_at_10.46.04_rhhyfn.png",
+  "/projects/lakoste/1.png",
+  "/projects/lakoste/2.png",
+  "/projects/lakoste/3.png",
+  "/projects/lakoste/4.png",
+  "/projects/lakoste/5.png",
+  "/projects/lakoste/6.png",
+  "/projects/lakoste/7.png",
 ];
 
 function Lakoste() {

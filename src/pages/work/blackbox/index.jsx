@@ -12,10 +12,7 @@ import {
   Tag,
 } from "@/components";
 
-const images = [
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1722419444/projects/blackbox/Screenshot_2024-07-31_at_16.50.30_gebhvx.png",
-  "https://res.cloudinary.com/ddcummtld/image/upload/v1722419403/projects/blackbox/Screenshot_2024-07-31_at_16.49.37_swofwg.png",
-];
+const images = ["/projects/blackbox/1.png", "/projects/blackbox/2.png"];
 
 function Blackbox() {
   return (

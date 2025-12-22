@@ -13,10 +13,11 @@ function ProjectDetail({ title, description, href, images, delay, children }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
-      <span className="text-2xl font-bold transition-all ease-in-out duration-300">
+      <h4 className="text-2xl font-bold transition-all ease-in-out duration-300">
         {title}
-      </span>
+      </h4>
       <p className="leading-5 mt-3">{description}</p>
+
       <motion.div
         transition={{ duration: 2, delay: 0.9, ease: "easeInOut" }}
         initial={{ opacity: 0 }}

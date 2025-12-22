@@ -25,14 +25,18 @@ function ProjectsPage() {
           <ProjectDescription
             title="Cirebon Banget"
             href="/work/cirebon-banget"
-            src="https://i.ibb.co/r3JgV6H/Screenshot-2024-02-07-at-17-55-28.png"
             delay={0.3}
             description="Cirebon Banget is a web application that showcases the achievements and creativity of the Cirebon community, with engaging content aimed at enhancing cultural literacy, especially among the youth of Cirebon Raya."
           />
           <ProjectDescription
+            title="Metalindo Sentosa Utama"
+            href="/work/metalindo"
+            delay={0.3}
+            description="Metalindo Sentosa Utama is a trusted B2B supplier of steel products, piping components, fabrication services, and industrial equipment for construction, manufacturing, and engineering sectors. This project provides a modern, responsive company website designed to showcase product information, technical specifications, and company details."
+          />
+          <ProjectDescription
             title="Scribbly"
             href="/work/scribbly"
-            src="https://i.ibb.co/r3JgV6H/Screenshot-2024-02-07-at-17-55-28.png"
             delay={0.3}
             description="Scribbly is a real-time collaborative text editor inspired by Google Docs, built with Next.js, TypeScript, and TailwindCSS, leveraging Liveblocks and Lexical Editor for real-time functionality."
           />

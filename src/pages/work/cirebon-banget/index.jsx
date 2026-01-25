@@ -60,6 +60,7 @@ function CirebonBanget() {
             <Tag label="GORM" />
             <Tag label="Redis" />
             <Tag label="Docker" />
+            <Tag label="AWS" />
           </ProjectDetail>
           <KeyFeatures>
             <KeyFeature

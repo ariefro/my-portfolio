@@ -29,7 +29,7 @@ function ProjectsPage() {
             description="Cirebon Banget is a web application that showcases the achievements and creativity of the Cirebon community, with engaging content aimed at enhancing cultural literacy, especially among the youth of Cirebon Raya."
           />
           <ProjectDescription
-            title="Metalindo Sentosa Utama"
+            title="Metalindo"
             href="/work/metalindo"
             delay={0.3}
             description="Metalindo Sentosa Utama is a trusted B2B supplier of steel products, piping components, fabrication services, and industrial equipment for construction, manufacturing, and engineering sectors. This project provides a modern, responsive company website designed to showcase product information, technical specifications, and company details."
@@ -39,13 +39,6 @@ function ProjectsPage() {
             href="/work/scribbly"
             delay={0.3}
             description="Scribbly is a real-time collaborative text editor inspired by Google Docs, built with Next.js, TypeScript, and TailwindCSS, leveraging Liveblocks and Lexical Editor for real-time functionality."
-          />
-          <ProjectDescription
-            title="Blackbox"
-            href="/work/blackbox"
-            src="https://i.ibb.co/h9ZdPrS/Screenshot-2023-08-30-at-11-06-29.png"
-            delay={0.6}
-            description="Meet Blackbox, the smart AI chatbot app powered by the advanced OpenAI API. It's your go-to conversational partner, offering assistance, information, and engaging discussions whenever you need them."
           />
           <ProjectDescription
             title="Siiso"
@@ -60,6 +53,13 @@ function ProjectsPage() {
             src="https://i.ibb.co/VgqbD1s/Cover-preview.png"
             delay={1.2}
             description="Lakoste is a financial planning app and mentoring project tailored for colleagues fresh out of bootcamp training, providing support for job applications and hands-on experience in building industry-like applications. As a backend developer and avid tech advocate, I'm excited to contribute my technical expertise to Lakoste, an initiative I've been deeply involved in."
+          />
+          <ProjectDescription
+            title="Blackbox"
+            href="/work/blackbox"
+            src="https://i.ibb.co/h9ZdPrS/Screenshot-2023-08-30-at-11-06-29.png"
+            delay={0.6}
+            description="Meet Blackbox, the smart AI chatbot app powered by the advanced OpenAI API. It's your go-to conversational partner, offering assistance, information, and engaging discussions whenever you need them."
           />
         </ul>
         <Sidebar />

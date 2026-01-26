@@ -35,7 +35,7 @@ function Metalindo() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
         >
-          Metalindo Sentosa Utama
+          Metalindo
         </motion.h3>
 
         <section className="mx-7 lg:mx-0 text-tertiary max-w-7xl mb-20 mt-4">

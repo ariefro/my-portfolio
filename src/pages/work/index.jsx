@@ -5,7 +5,6 @@ import {
   PageWrapper,
   ProjectDescription,
   Sidebar,
-  Tag,
 } from "@/components";
 
 function ProjectsPage() {
@@ -31,35 +30,35 @@ function ProjectsPage() {
           <ProjectDescription
             title="Metalindo"
             href="/work/metalindo"
-            delay={0.3}
+            delay={0.6}
             description="Metalindo Sentosa Utama is a trusted B2B supplier of steel products, piping components, fabrication services, and industrial equipment for construction, manufacturing, and engineering sectors. This project provides a modern, responsive company website designed to showcase product information, technical specifications, and company details."
           />
           <ProjectDescription
             title="Scribbly"
             href="/work/scribbly"
-            delay={0.3}
+            delay={0.9}
             description="Scribbly is a real-time collaborative text editor inspired by Google Docs, built with Next.js, TypeScript, and TailwindCSS, leveraging Liveblocks and Lexical Editor for real-time functionality."
           />
           <ProjectDescription
             title="Siiso"
             href="/work/siiso"
             src="https://i.ibb.co/cbZ9Tjh/Screenshot-2023-08-30-at-10-33-14.png"
-            delay={0.9}
-            description="Siiso is a web app that visualizes your personalized Spotify data. Easily view your top artists, tracks, and recently played songs, along with detailed audio information for each track. Plus, you can create and save new playlists based on recommendations from your existing playlists and much more."
-          />
-          <ProjectDescription
-            title="Lakoste"
-            href="/work/lakoste"
-            src="https://i.ibb.co/VgqbD1s/Cover-preview.png"
             delay={1.2}
-            description="Lakoste is a financial planning app and mentoring project tailored for colleagues fresh out of bootcamp training, providing support for job applications and hands-on experience in building industry-like applications. As a backend developer and avid tech advocate, I'm excited to contribute my technical expertise to Lakoste, an initiative I've been deeply involved in."
+            description="Siiso is a web app that visualizes your personalized Spotify data. Easily view your top artists, tracks, and recently played songs, along with detailed audio information for each track. Plus, you can create and save new playlists based on recommendations from your existing playlists and much more."
           />
           <ProjectDescription
             title="Blackbox"
             href="/work/blackbox"
             src="https://i.ibb.co/h9ZdPrS/Screenshot-2023-08-30-at-11-06-29.png"
-            delay={0.6}
+            delay={1.5}
             description="Meet Blackbox, the smart AI chatbot app powered by the advanced OpenAI API. It's your go-to conversational partner, offering assistance, information, and engaging discussions whenever you need them."
+          />
+          <ProjectDescription
+            title="Lakoste"
+            href="/work/lakoste"
+            src="https://i.ibb.co/VgqbD1s/Cover-preview.png"
+            delay={1.8}
+            description="Lakoste is a financial planning app and mentoring project tailored for colleagues fresh out of bootcamp training, providing support for job applications and hands-on experience in building industry-like applications. As a backend developer and avid tech advocate, I'm excited to contribute my technical expertise to Lakoste, an initiative I've been deeply involved in."
           />
         </ul>
         <Sidebar />

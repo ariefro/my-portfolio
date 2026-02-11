@@ -40,12 +40,12 @@ function AboutPage() {
           className={"relative mt-[17vh]"}
           id={"content-one"}
           text={
-            "I am a Mechanical Engineering graduate with both an associate and a bachelor's degree. I worked as an Engineer for four years, specialized in jet engines for aircraft."
+            "I am a web developer with a specialization in backend development, focused on building APIs and application architectures that are scalable and maintainable."
           }
           isVisible={isVisible}
         >
           <motion.div
-            className="absolute z-40 w-full top-1/3 h-80 bg-[#EEEEEE]"
+            className="absolute z-40 w-full top-[30%] h-80 bg-[#EEE]"
             transition={{ duration: 2, ease: "easeInOut" }}
             initial={{ opacity: 1 }}
             animate={{ opacity: 0 }}
@@ -54,27 +54,28 @@ function AboutPage() {
         <About
           id={"content-two"}
           text={
-            "However, I gradually began to notice the beauty in web and application design, as well as the way an application could solve so many real-world problems. This sparked a growing interest in me, and from that point forward, I became deeply fascinated by the intersection of creativity and technology."
+            "I started my career as an aircraft engine engineer, where precision, reliability, and system thinking were critical. Today, I bring that same engineering discipline into software — designing systems that are maintainable, performant, and built for long-term growth."
           }
           isVisible={isVisible}
         />
         <About
           id={"content-three"}
           text={
-            "I've been on a quest to learn full-stack web development since 2021, and in 2022 I made the career switch to being a backend developer."
+            "My shift into software began with curiosity about how digital products solve real-world problems at scale. That curiosity quickly turned into a full commitment Since 2021, I’ve been deeply focused on web development — building projects, studying system design, and refining how I write clean, production-ready code."
           }
           isVisible={isVisible}
         />
         <About
           id={"content-four"}
           text={
-            "I have a strong drive for creating efficient solutions and a constant thirst for learning new technologies. I find joy in crafting the architecture and logic that enable a product to function smoothly, ensuring that the technology behind the scenes is both scalable and secure."
+            "In 2022, I transitioned into software engineering professionally and became a backend developer at AIForesee."
           }
           isVisible={isVisible}
         />
         <About
           id={"content-five"}
-          text={"I am immensely grateful to be doing what I love!"}
+          className={"mb-20"}
+          text={"There, I’ve worked on production systems, external API integrations, and backend services with a focus on performance, reliability, and clean architecture. I enjoy turning complex requirements into simple, well-structured systems that teams can confidently build on."}
           isVisible={isVisible}
         />
         <Footer

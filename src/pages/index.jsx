@@ -32,14 +32,14 @@ function Home() {
               BACKEND DEVELOPER
             </motion.p>
           </div>
-          <motion.p
-            className="mt-14 text-sm w-64 md:text-lg md:w-80"
-            transition={{ ...config, delay: 1.5 }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-          >
-            Currently looking for opportunities as a backend developer
-          </motion.p>
+          {/*<motion.p*/}
+          {/*  className="mt-14 text-sm w-64 md:text-lg md:w-80"*/}
+          {/*  transition={{ ...config, delay: 1.5 }}*/}
+          {/*  initial={{ opacity: 0 }}*/}
+          {/*  animate={{ opacity: 1 }}*/}
+          {/*>*/}
+          {/*  Currently looking for opportunities as a backend developer*/}
+          {/*</motion.p>*/}
           <motion.div
             className="absolute bottom-5 text-sm md:text-lg"
             transition={{ ...config, delay: 1.8 }}
